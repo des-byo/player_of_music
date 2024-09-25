@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;400;500&display=swap');
+
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li { margin: 0; padding: 0; }
+a { text-decoration: none; color: inherit; }
+* { box-sizing: border-box; }
+
+/* Body styles */
+body {
+    min-height: 100vh;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem; /* Reduced padding */
+    background: #020617 url('../images/bg.jpg') no-repeat center center fixed;
+    color: #cbd5e1;
+    font-family: 'Sora', sans-serif;
+    line-height: 1.5;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.get-started {
+    padding: 1.5rem; /* Reduced padding */
+    border: 0.5px solid #1e293b;
+    background-color: #212936;
+    border-radius: 1rem; /* Reduced border-radius */
+    font-size: 0.75rem; /* Reduced font-size */
+    font-weight: 200;
+    width: auto;
+}
+
+.music-player {
+    text-align: center;
+    width: 40%; /* Reduced width */
+    margin: 0 auto;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.75rem; /* Reduced margin */
+}
+
+.control-btn {
+    width: 40px; /* Reduced size */
+    height: 40px; /* Reduced size */
+    cursor: pointer;
+    margin: 0 8px; /* Reduced margin */
+    transition: transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pause-btn {
+    border-radius: 50%;
+    background-color: #C93B76;
+}
+
+.control-btn img {
+    width: 20px; /* Reduced size of the icon */
+    height: 20px; /* Reduced size of the icon */
+}
+
+.control-btn:hover { transform: scale(1.05); } /* Reduced scale on hover */
+
+/* Responsive adjustments */
+@media screen and (min-width: 720px) {
+    .logo { width: 350px;
+            height: 400px;
+            border-radius: 15px;
+            object-fit: cover;
+
+ } /* No changes here */
+}
+
+/* CSS to style the seek bar */
+.seek-bar {
+    width: 100%; /* Full width of the music player */
+    margin-bottom: 0.75rem; /* Space between seek bar and controls */
+}
+
+#seek-bar {
+    width: 100%;
+    height: 8px; /* Thickness of the seek bar */
+    background: #cbd5e1; /* Color of the seek bar */
+    border-radius: 4px; /* Rounded corners for the seek bar */
+    outline: none; /* Remove default outline */
+    -webkit-appearance: none; /* Remove default appearance
+ */
+    margin-top: 2rem;
+}
+
+#seek-bar::-webkit-slider-thumb {
+    width: 16px; /* Size of the thumb */
+    height: 16px; /* Size of the thumb */
+    background: #C93B76; /* Color of the thumb */
+    border-radius: 50%; /* Circular thumb */
+    cursor: pointer; /* Cursor style for thumb */
+    -webkit-appearance: none; /* Remove default appearance */
+}
+
+#seek-bar::-moz-range-thumb {
+    width: 16px; /* Size of the thumb */
+    height: 16px; /* Size of the thumb */
+    background: #C93B76; /* Color of the thumb */
+    border-radius: 50%; /* Circular thumb */
+    cursor: pointer; /* Cursor style for thumb */
+}
+
+.title {
+
+    margin-top: 1rem;
+    
+}

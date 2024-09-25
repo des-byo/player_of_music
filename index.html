@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title id="album-cover">Player of Music</title>
+    <link rel="icon" href="images/quarter_note.png" type="image/x-icon" sizes="any">
+</head>
+<body>
+<div class="get-started">
+    <header>        
+            <img class="logo" id = "cover-image" src="images/cover-1.png" alt="Main Logo">
+            <p></p>
+            <h3 class="title" id="song-title">Lost In The Cities</h3>
+            <p id="song-artist">Cosmo Sheldrake</p>                  
+    </header>
+    
+    <main>
+        <div class="music-player">
+            <audio id="audio" src="images/forest-lullaby-110624.mp3"></audio>
+        <div class="seek-bar">
+                <input type="range" id="seek-bar" min="0" max="100" value="0" step="1">
+            </div>
+            <div class="controls">
+                <img src="images/Stop_and_play_fill-1.svg" alt="Play" id="prev-btn" class="control-btn">
+                <img src="images/Play_fill.svg" alt="Pause" id="play-btn" class="control-btn">
+                <img src="images/Stop_and_play_fill.svg" alt="Stop" id="next-btn" class="control-btn">
+            </div>
+        </div>
+    </main>
+ </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
